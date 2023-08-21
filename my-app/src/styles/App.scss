@@ -23,12 +23,6 @@
       border-radius: var(--br-sm);
       padding: 0.15rem 0.5rem;
       border: 1px solid var(--font);
-      .arrowLink {
-        position: absolute;
-        bottom: 1rem;
-        margin: 1rem;
-        background-color: red;
-      }
     }
     span {
       width: 100%;
@@ -39,7 +33,7 @@
   }
 }
 
-// Main Display
+// Desktop Display
 @media (min-width: 1024px) {
   .wrap {
     padding: 0 5rem;
@@ -68,7 +62,7 @@
   }
 }
 
-// Medium display
+// Laptop display
 @media (max-width: 1023px) {
   .wrap {
     margin: 0 3rem;
@@ -98,14 +92,14 @@
   }
 }
 
-// Small display
+// Tablet display
 @media (max-width: 768px) {
   .wrap {
     margin: var(--spacing-sm) 1.5rem;
   }
 }
 
-// Xs display
+// Mobile display
 @media (max-width: 639px) {
   .App-header {
     h1 {
@@ -113,7 +107,6 @@
       font-weight: 600;
     }
   }
-
   .project-card {
     flex-direction: column-reverse;
   }
@@ -147,8 +140,6 @@
     .project-header {
       min-width: var(--spacing-xl);
       margin-right: var(--spacing-xs);
-      width: 100%;
-
       .project-image {
         width: 100%;
       }
@@ -165,14 +156,11 @@
           color: var(--yellow);
           width: fit-content;
           padding: 0 var(--f-sm);
+          margin: var(--spacing-xs) 0;
           border-radius: var(--br-sm);
           background-color: var(--highlight);
         }
       }
-    }
-    .icon {
-      display: flex;
-      font-size: 2rem;
     }
   }
 

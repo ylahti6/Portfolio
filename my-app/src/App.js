@@ -2,7 +2,6 @@ import React from "react";
 import "./index.css";
 import "./styles/App.css";
 import resumePDF from "./images/Resume.pdf";
-import useHover from "./Sections/Components/arrowHoverFunction";
 import {
   PiGithubLogoLight,
   PiCodepenLogoLight,

@@ -23,12 +23,6 @@
   padding: 0.15rem 0.5rem;
   border: 1px solid var(--font);
 }
-.App-header .App-social h6 .arrowLink {
-  position: absolute;
-  bottom: 1rem;
-  margin: 1rem;
-  background-color: red;
-}
 .App-header .App-social span {
   width: 100%;
 }
@@ -134,7 +128,6 @@
 .content-wrap .project-card .project-header {
   min-width: var(--spacing-xl);
   margin-right: var(--spacing-xs);
-  width: 100%;
 }
 .App .project-card .project-header .project-image,
 .content-wrap .project-card .project-header .project-image {
@@ -156,13 +149,9 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 var(--f-sm);
+  margin: var(--spacing-xs) 0;
   border-radius: var(--br-sm);
   background-color: var(--highlight);
-}
-.App .project-card .icon,
-.content-wrap .project-card .icon {
-  display: flex;
-  font-size: 2rem;
 }
 .App .project-image:hover,
 .content-wrap .project-image:hover {

@@ -18,7 +18,7 @@ root.render(
       <Content>
         <About />
         <Work />
-        <Writing />
+        {/* <Writing /> */}
         <Footer />
       </Content>
     </div>
