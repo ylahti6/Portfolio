@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background-color: #0f172a;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+body * h1 {
+  font-size: calc(10px + 4vmin);
+  font-weight: 700;
+}
+body * p {
+  font-size: calc(6px + 1vmin);
+  color: var(--slate);
+}
+body * h6 {
+  font-size: calc(8px + 1vmin);
+  font-weight: 600;
+}
+
+.about {
+  background-color: blue;
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  max-width: 1250px;
+  gap: 1rem;
+  padding: 5vmin 0;
+}
+
+@media (min-width: 1080px) {
+  .App {
+    background-color: red;
+    height: auto;
+    min-width: 50%;
+  }
+  .Content .about, .Content .work {
+    color: red;
+  }
+  .App-header {
+    position: sticky;
+    background-color: green;
+  }
+}
+@media (max-width: 1080px) {
+  .App-header {
+    background-color: red;
+  }
+  .wrap {
+    display: block;
+    width: auto;
+    margin: 1rem 3rem;
+  }
+}
+.App, .about, .work {
+  margin-bottom: var(--spacing);
+}/*# sourceMappingURL=App.css.map */
