@@ -13,42 +13,45 @@ body * {
   padding: 0;
 }
 body * h1 {
-  font-size: calc(10px + 4vmin);
+  font-size: var(--font-header-desktop);
   font-weight: 700;
 }
 body * p {
   font-size: calc(6px + 1vmin);
   color: var(--slate);
+  line-height: 1.75rem;
 }
 body * h6 {
   font-size: calc(8px + 1vmin);
-  font-weight: 600;
-}
-
-.about {
-  background-color: blue;
-  width: 100%;
+  font-weight: 500;
+  margin: 0 0 1vmin 0;
 }
 
 .wrap {
   display: flex;
-  max-width: 1250px;
-  gap: 1rem;
-  padding: 5vmin 0;
+  max-width: 1125px;
+  margin: 8vmin 0;
+  height: 100vh;
 }
 
 @media (min-width: 1080px) {
-  .App {
-    background-color: red;
-    height: auto;
+  .App, .about {
     min-width: 50%;
+    margin: 0 1rem;
   }
-  .Content .about, .Content .work {
-    color: red;
+  .about {
+    height: 2000px;
   }
   .App-header {
-    position: sticky;
-    background-color: green;
+    position: fixed;
+  }
+  .App-header .App-social {
+    color: var(--slate);
+    max-width: 25%;
+    font-size: var(--font-social-icons);
+    display: flex;
+    padding: 5vmin 0;
+    justify-content: space-between;
   }
 }
 @media (max-width: 1080px) {
@@ -63,4 +66,8 @@ body * h6 {
 }
 .App, .about, .work {
   margin-bottom: var(--spacing);
+}
+
+.icon:hover {
+  color: var(--white);
 }/*# sourceMappingURL=App.css.map */

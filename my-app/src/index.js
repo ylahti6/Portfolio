@@ -5,6 +5,7 @@ import './styles/variable.css';
 import App from './App';
 import Content from './Content';
 import About from './components/About';
+import Work from './components/Work';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,6 +15,7 @@ root.render(
       <App />
       <Content>
         <About />
+        <Work />
       </ Content >
     </div>
   </React.StrictMode>

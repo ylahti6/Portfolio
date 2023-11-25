@@ -7,6 +7,17 @@
     --light-navy: #112240;
     --slate: #8892b0;
     --light-slate: #a8b2d1;
-
     --spacing: 5vmin;
+
+    /* DESKTOP */
+    --font-header-desktop: calc(10px + 4vmin);
+    --font-title-desktop: calc(8px + 1vmin);
+
+    /* IPAD */
+
+    /* MOBILE */
+
+
+    /* ICONS */
+    --font-social-icons: calc(10px + 2vmin);
 }
