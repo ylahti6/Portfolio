@@ -12,6 +12,11 @@ body {
   * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+
+    a {
+      color: var(--white);
+    }
   }
 }
 
@@ -22,7 +27,7 @@ body {
 
 .App-header {
   .App-social {
-    margin: 2rem 0;
+    margin: var(--spacing-sm) 0;
     gap: 1rem;
     display: flex;
 
@@ -35,7 +40,7 @@ body {
 // Font sizing
 h1 {font-size: var(--f-lg); font-weight: 700;}
 h3 {font-size: var(--f-md); font-weight: 500;}
-h6 {font-size: var(--f-sm); font-weight: 600; margin: var(--spacing-sm) 0; }
+h6 {font-size: var(--f-sm); font-weight: 600; margin-bottom: var(--spacing-sm); }
 p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 1.5rem;}
 
 // Large display
@@ -49,7 +54,7 @@ p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 
   }
   .wrap {
     padding: 0 5rem;
-    margin-top: var(--spacing);
+    margin-top: var(--spacing-md);
   }
 }
 
@@ -81,6 +86,21 @@ p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 
   .wrap {
     margin: var(--spacing-sm) 1.5rem 0 1.5rem;
   }
+
+  .title {
+    background-color: #0f172a70;
+    backdrop-filter: blur(10px); 
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: var(--spacing-md);
+
+    h6 {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
 }
 
 // Xs display
@@ -92,9 +112,31 @@ p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 
 }
 
 .App,
-.about,
-.work {
+.content-wrap {
   margin-bottom: var(--spacing-lg);
+  height: auto;
+  position: relative;
+
+  .project {
+    height: auto;;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: var(--br-sm);
+
+    .project-image {
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+      border-radius: var(--br-sm);
+    }
+
+    .project-content {
+      background-color: yellow;
+      height: 100px;
+      width: 100px;
+    }
+  }
 }
 
 // SOCIAL ICONS
