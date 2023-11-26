@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   background-color: #0f172a;
@@ -6,83 +6,97 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--white);
 
-  // remove padding and margin from all components within the body
   * {
     margin: 0;
     padding: 0;
-
-    h1 {
-      font-size: var(--font-header-desktop);
-      font-weight: 700;
-    }
-  
-    p {
-      font-size: calc(6px + 1vmin);
-      color: var(--slate);
-      line-height: 1.75rem;
-    }
-
-    h6 {
-      font-size: calc(8px + 1vmin);
-      font-weight: 500;
-      margin: 0 0 1vmin 0;
-      
-    }
   }
 }
 
 .wrap {
   display: flex;
-  max-width: 1125px;
-  margin: 8vmin 0;
-  height: 100vh;
+  max-width: 1100px;
 }
 
-// DESKTOP Styling
-@media (min-width: 1080px) {
-  .App, .about {
-    min-width: 50%;
-    margin: 0 1rem;
-  }
+.App-header {
+  .App-social {
+    margin: 2rem 0;
+    gap: 1rem;
+    display: flex;
 
-  .about {
-    height: 2000px;
-  }
-
-  .App-header {
-    position: fixed;
-    // Styling for socials DESKTOP
-    .App-social {
-      color: var(--slate);
-      max-width: 25%;
-      font-size: var(--font-social-icons);
-      display: flex;
-      padding: 5vmin 0;
-      justify-content: space-between;
+    .icon {
+      font-size: 2rem;
     }
   }
 }
 
-@media (max-width: 1080px) {
+// Font sizing
+h1 {font-size: var(--f-lg); font-weight: 700;}
+h3 {font-size: var(--f-md); font-weight: 500;}
+h6 {font-size: var(--f-sm); font-weight: 600; margin: var(--spacing-sm) 0; }
+p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 1.5rem;}
+
+// Large display
+@media (min-width: 1024px) {
   .App-header {
-    background-color: red;
+    position: fixed;
+    max-width: 40%;
   }
-
-  // When screen size gets smaller than 1080px the App + Content will sit on top of each other.
+  .App {
+    min-width: 50%;
+  }
   .wrap {
-    display:block;
-    width: auto;
-    margin: 1rem 3rem;
+    padding: 0 5rem;
+    margin-top: var(--spacing);
   }
 }
 
-.App, .about, .work {
-  margin-bottom: var(--spacing);
+// Medium display
+@media (max-width: 1023px) {
+  .wrap {
+    margin: 0 3rem;
+    display: block;
+    margin: var(--spacing-md) 2.75rem 0 2.75rem;
+  }
+
+  .App-header {
+    margin-top: var(--spacing);
+
+    .App-social {
+      margin: 2rem 0;
+      gap: 1rem;
+      max-width: auto;
+
+      .icon {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
-.icon:hover {
-  color: var(--white);
+// Small display
+@media (max-width: 768px) {
+  .wrap {
+    margin: var(--spacing-sm) 1.5rem 0 1.5rem;
+  }
 }
+
+// Xs display
+@media (max-width: 639px) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+
+.App,
+.about,
+.work {
+  margin-bottom: var(--spacing-lg);
+}
+
+// SOCIAL ICONS
+.icon:hover {color: var(--white)}
+.icon {color: var(--slate);}

@@ -6,8 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Yannick Lahti</h1>
-        <h6>Junior Front-End developer</h6>
-        <p>I build accessible and easy to use applications for the web.</p>
+        <h3>Junior Front-End developer</h3>
+        <p>I build accessible and easy to use<br /> applications for the web.</p>
       
     
           <div className='App-social'>
@@ -18,7 +18,7 @@ function App() {
       </header>
 
       
-    </div>
+    </div> 
   );
 }
 

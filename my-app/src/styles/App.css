@@ -12,62 +12,96 @@ body * {
   margin: 0;
   padding: 0;
 }
-body * h1 {
-  font-size: var(--font-header-desktop);
-  font-weight: 700;
-}
-body * p {
-  font-size: calc(6px + 1vmin);
-  color: var(--slate);
-  line-height: 1.75rem;
-}
-body * h6 {
-  font-size: calc(8px + 1vmin);
-  font-weight: 500;
-  margin: 0 0 1vmin 0;
-}
 
 .wrap {
   display: flex;
-  max-width: 1125px;
-  margin: 8vmin 0;
-  height: 100vh;
+  max-width: 1100px;
 }
 
-@media (min-width: 1080px) {
-  .App, .about {
-    min-width: 50%;
-    margin: 0 1rem;
-  }
-  .about {
-    height: 2000px;
-  }
+.App-header .App-social {
+  margin: 2rem 0;
+  gap: 1rem;
+  display: flex;
+}
+.App-header .App-social .icon {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: var(--f-lg);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--f-md);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: var(--f-sm);
+  font-weight: 600;
+  margin: var(--spacing-sm) 0;
+}
+
+p {
+  font-size: var(--f-sm);
+  color: var(--slate);
+  margin: 0.75rem 0;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
   .App-header {
     position: fixed;
+    max-width: 40%;
   }
-  .App-header .App-social {
-    color: var(--slate);
-    max-width: 25%;
-    font-size: var(--font-social-icons);
-    display: flex;
-    padding: 5vmin 0;
-    justify-content: space-between;
-  }
-}
-@media (max-width: 1080px) {
-  .App-header {
-    background-color: red;
+  .App {
+    min-width: 50%;
   }
   .wrap {
-    display: block;
-    width: auto;
-    margin: 1rem 3rem;
+    padding: 0 5rem;
+    margin-top: var(--spacing);
   }
 }
-.App, .about, .work {
-  margin-bottom: var(--spacing);
+@media (max-width: 1023px) {
+  .wrap {
+    margin: 0 3rem;
+    display: block;
+    margin: var(--spacing-md) 2.75rem 0 2.75rem;
+  }
+  .App-header {
+    margin-top: var(--spacing);
+  }
+  .App-header .App-social {
+    margin: 2rem 0;
+    gap: 1rem;
+    max-width: auto;
+  }
+  .App-header .App-social .icon {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .wrap {
+    margin: var(--spacing-sm) 1.5rem 0 1.5rem;
+  }
+}
+@media (max-width: 639px) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
+.App,
+.about,
+.work {
+  margin-bottom: var(--spacing-lg);
 }
 
 .icon:hover {
   color: var(--white);
+}
+
+.icon {
+  color: var(--slate);
 }/*# sourceMappingURL=App.css.map */
