@@ -1,67 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-body {
-  background-color: #0f172a;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  color: var(--white);
-
-  * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-
-    a {
-      color: var(--white);
-    }
-  }
-}
-
+// Main Container
 .wrap {
   display: flex;
   max-width: 1100px;
 }
 
 .App-header {
+  height: calc(100% - (var(--spacing-md) * 2));
+  position: relative;
   .App-social {
-    margin: var(--spacing-sm) 0;
     gap: 1rem;
     display: flex;
-
-    .icon {
-      font-size: 2rem;
-    }
   }
 }
 
-// Font sizing
-h1 {font-size: var(--f-lg); font-weight: 700;}
-h3 {font-size: var(--f-md); font-weight: 500;}
-h6 {font-size: var(--f-sm); font-weight: 600; margin-bottom: var(--spacing-sm);}
-p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 1.5rem;}
-
-// Large display
+// Main Display
 @media (min-width: 1024px) {
   .App-header {
     position: fixed;
     max-width: 40%;
+
+    .App-social {
+      position: absolute;
+      bottom: 0;
+    }
   }
   .App {
     min-width: 50%;
   }
   .wrap {
     padding: 0 5rem;
-    margin-top: var(--spacing-md);
+    margin: var(--spacing-md) 0;
   }
-
   .project-header {
     margin-right: 1rem;
     max-height: var(--spacing-md);
     max-width: var(--spacing-lg);
-
   }
 }
 
@@ -70,40 +43,12 @@ p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 
   .wrap {
     margin: 0 3rem;
     display: block;
-    margin: var(--spacing-md) 2.75rem 0 2.75rem;
+    margin: var(--spacing-md) 2.75rem;
   }
 
-  .App-header {
-    margin-top: var(--spacing);
-
-    .App-social {
-      margin: 2rem 0;
-      gap: 1rem;
-      max-width: auto;
-
-      .icon {
-        font-size: 2rem;
-      }
-    }
+  .App-social {
+    color: red;
   }
-
-  .project-header {
-    min-height: auto;
-    min-width: 25%;
-    margin-right: var(--spacing-sm);
-  }
-
-  .project-content {
-    width: 100%;
-  }
-}
-
-// Small display
-@media (max-width: 768px) {
-  .wrap {
-    margin: var(--spacing-sm) 1.5rem 0 1.5rem;
-  }
-
   .title {
     background-color: #0f172a70;
     backdrop-filter: blur(10px); 
@@ -118,18 +63,30 @@ p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 
       height: 100%;
     }
   }
-
   .project-header {
-    
-    width: 80%;
+    min-width: 25%;
+    margin-right: var(--spacing-sm);
+  }
+
+  .project-content {
+    width: 100%;
+  }
+}
+
+// Small display
+@media (max-width: 768px) {
+  .wrap {
+    margin: var(--spacing-sm) 1.5rem;
   }
 }
 
 // Xs display
 @media (max-width: 639px) {
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+  .App-header {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
   }
 
   .project-card {
@@ -137,35 +94,46 @@ p {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 
   }
 }
 
+.content-wrap:last-child { margin-bottom: 0; max-width: 40rem}
+
 .App,
 .content-wrap {
   margin-bottom: var(--spacing-lg);
-  height: auto;
-  position: relative;
-
   .project-card {
-    height: auto;;
+    height: auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--spacing-sm);
-    // background-color: red;
-
     h6 {
       padding: 0;
       margin: 0;
     }
-
     .project-header {
       background-color: var(--slate);
       border-radius: var(--br-sm);
     }
-
     .project-content {
       height: auto;
+      width: 100%;
+      span {
+        display: flex;
+        justify-content: space-between;
+      }
+      .project-keywords {
+        display: flex;
+        gap: var(--f-sm);
+        .keyword {
+          color: var(--yellow);
+          width: fit-content;
+          padding: 0 var(--f-sm);
+          border-radius: 1rem;
+          background-color: var(--peel);
+        }
+      }
+    }
+    .icon {
+      display: flex;
+      font-size: 2rem;
     }
   }
 }
-
-// SOCIAL ICONS
-.icon:hover {color: var(--white)}
-.icon {color: var(--slate);}

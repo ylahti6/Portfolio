@@ -1,3 +1,4 @@
+import './index.css';
 import './styles/App.css';
 import { PiGithubLogoLight, PiCodepenLogoLight, PiInstagramLogoLight } from "react-icons/pi";
 
@@ -16,8 +17,6 @@ function App() {
             <PiInstagramLogoLight className='icon'/>
           </div>
       </header>
-
-      
     </div> 
   );
 }
