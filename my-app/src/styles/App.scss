@@ -15,6 +15,15 @@
 
 // Main Display
 @media (min-width: 1024px) {
+  .resume {
+    margin-top: var(--spacing-sm);
+    transition: 0.3s ease;
+    width: fit-content;
+  }
+  .resume:hover {
+    margin-left: var(--spacing-sm);
+  }
+
   .App-header {
     position: fixed;
     max-width: 40%;
@@ -40,6 +49,12 @@
 
 // Medium display
 @media (max-width: 1023px) {
+
+  .resume {
+    text-align: right;
+    margin-top: var(--spacing-sm);
+  }
+
   .wrap {
     margin: 0 3rem;
     display: block;
@@ -99,6 +114,7 @@
 .App,
 .content-wrap {
   margin-bottom: var(--spacing-lg);
+
   .project-card {
     height: auto;
     display: flex;
