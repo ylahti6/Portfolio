@@ -10,17 +10,13 @@
 .App-header .App-social {
   gap: 1rem;
   display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media (min-width: 1024px) {
   .resume {
     margin-top: var(--spacing-sm);
-    transition: 0.3s ease;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .resume:hover {
-    margin-left: var(--spacing-sm);
   }
   .App-header {
     position: fixed;
@@ -54,7 +50,7 @@
     margin: var(--spacing-md) 2.75rem;
   }
   .App-social {
-    color: red;
+    margin-top: var(--spacing-sm);
   }
   .title {
     background-color: rgba(15, 23, 42, 0.4392156863);
@@ -90,6 +86,10 @@
   }
   .project-card {
     flex-direction: column-reverse;
+  }
+  .project-card .project-keywords {
+    background-color: red;
+    flex-direction: column;
   }
 }
 .content-wrap:last-child {

@@ -2,6 +2,8 @@ import '../index.css';
 import '../styles/App.css';
 
 function About() {
+  const resumeUrl = 'https://github.com/himynameisyannick/PPv2/blob/f6dac43bed821f713453c9ad7dc141de931f4818/my-app/public/Resume.pdf';
+
   return (
     <div className='content-wrap'>
       <div className='title'>
@@ -14,9 +16,7 @@ function About() {
       <p>My journey fuses technological expertise, artistic inspiration, and a commitment to impactful digital experiences.</p>
 
       <div className="resume">
-        {/* <h6><a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">View Full Resume</a></h6> */}
-        <iframe src="/path/to/Resume.pdf" title="Resume" width="100%" height="600px"></iframe>
-
+        <h6><a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Full Resume</a></h6>
       </div>
     </div>
   );

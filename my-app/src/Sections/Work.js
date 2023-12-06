@@ -8,21 +8,21 @@ function Work() {
     {
       title: "Libernotes",
       content: "A user-friendly note-taking app built with React.js, styled with Scss.",
-      imageSrc: "my-app/src/images/course-card.webp",
+      imageSrc: "{my-app/public/logo512.png}",
       keywords: ["React.js", "Scss"],
     },
     {
       title: "IT GIRL Theme (Blog)",
       content: "Another project description here.",
       imageSrc: "my-app/src/images/course-card.webp",
-      keywords: ["React.js", "Blog", "Theme"],
+      keywords: ["React.js","SCSS", "Blog",],
     },
     {
       title: "FullBoost",
       content: "Yet another project description.",
       imageSrc: "my-app/src/images/course-card.webp",
       keywords: ["React.js", "Sass"],
-    },
+    }
   ]
 
   return (
