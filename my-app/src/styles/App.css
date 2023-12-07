@@ -34,9 +34,15 @@
     margin: var(--spacing-md) 0;
   }
   .project-header {
-    margin-right: 1rem;
-    max-height: var(--spacing-md);
-    max-width: var(--spacing-lg);
+    margin-right: var(--spacing-sm);
+    min-width: 10rem;
+    max-width: 16rem;
+  }
+  .project-header .project-image {
+    width: 100%;
+  }
+  .project-header .project-content {
+    background-color: blue;
   }
 }
 @media (max-width: 1023px) {
@@ -67,7 +73,6 @@
     height: 100%;
   }
   .project-header {
-    min-width: 25%;
     margin-right: var(--spacing-sm);
   }
   .project-content {
@@ -105,8 +110,12 @@
 .content-wrap .project-card {
   height: auto;
   display: flex;
-  justify-content: space-between;
   margin-bottom: var(--spacing-sm);
+}
+.App .project-card .project-image,
+.content-wrap .project-card .project-image {
+  min-width: 100%;
+  border-radius: var(--br-sm);
 }
 .App .project-card h6,
 .content-wrap .project-card h6 {
@@ -115,12 +124,7 @@
 }
 .App .project-card .project-header,
 .content-wrap .project-card .project-header {
-  background-color: var(--slate);
-  border-radius: var(--br-sm);
-}
-.App .project-card .project-content,
-.content-wrap .project-card .project-content {
-  height: auto;
+  min-width: var(--spacing-xl);
   width: 100%;
 }
 .App .project-card .project-content span,
@@ -146,4 +150,10 @@
 .content-wrap .project-card .icon {
   display: flex;
   font-size: 2rem;
+}
+.App .project-image:hover,
+.content-wrap .project-image:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(70%);
+  transition: all 0.3s ease;
 }/*# sourceMappingURL=App.css.map */

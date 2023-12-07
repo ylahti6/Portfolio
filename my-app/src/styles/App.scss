@@ -19,7 +19,6 @@
   .resume {
     margin-top: var(--spacing-sm);
   }
-
   .App-header {
     position: fixed;
     max-width: 40%;
@@ -36,10 +35,18 @@
     padding: 0 5rem;
     margin: var(--spacing-md) 0;
   }
+
   .project-header {
-    margin-right: 1rem;
-    max-height: var(--spacing-md);
-    max-width: var(--spacing-lg);
+    margin-right: var(--spacing-sm);
+    min-width: 10rem;
+    max-width: 16rem;
+
+    .project-image {
+      width: 100%;
+    }
+    .project-content {
+      background-color: blue;
+    }
   }
 }
 
@@ -75,7 +82,6 @@
     }
   }
   .project-header {
-    min-width: 25%;
     margin-right: var(--spacing-sm);
   }
 
@@ -119,19 +125,20 @@
   .project-card {
     height: auto;
     display: flex;
-    justify-content: space-between;
     margin-bottom: var(--spacing-sm);
+   .project-image {
+      min-width: 100%;
+      border-radius: var(--br-sm);
+    }
     h6 {
       padding: 0;
       margin: 0;
     }
     .project-header {
-      background-color: var(--slate);
-      border-radius: var(--br-sm);
+      min-width: var(--spacing-xl);
+      width: 100%;
     }
     .project-content {
-      height: auto;
-      width: 100%;
       span {
         display: flex;
         justify-content: space-between;
@@ -146,6 +153,8 @@
           border-radius: 1rem;
           background-color: var(--peel);
         }
+
+        
       }
     }
     .icon {
@@ -153,4 +162,17 @@
       font-size: 2rem;
     }
   }
+  
+.project-image:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
+}
+
+
+
