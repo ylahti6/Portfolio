@@ -92,10 +92,6 @@
   .project-card {
     flex-direction: column-reverse;
   }
-  .project-card .project-keywords {
-    background-color: red;
-    flex-direction: column;
-  }
 }
 .content-wrap:last-child {
   margin-bottom: 0;
