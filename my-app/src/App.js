@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <h1>Yannick Lahti</h1>
         <h3>Junior Front-End developer</h3>
-        <p>I build accessible and easy to use<br /> applications for the web.</p>
+        <p className='lg-font'>I build accessible and easy to use<br /> applications for the web.</p>
       
           <div className='App-social'>
             <a href={githubUrl} target="_blank" rel="noopener noreferrer"><PiGithubLogoLight className='icon'/></a>

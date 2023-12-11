@@ -37,17 +37,11 @@
   }
 
   .project-header {
-    margin-right: var(--spacing-sm);
     min-width: 10rem;
     max-width: 16rem;
-
-    .project-image {
-      width: 100%;
-    }
-    .project-content {
-      background-color: blue;
-    }
   }
+  // Adding space to the first component of the content section to match the height of the left info section 
+  .content-wrap:first-child { margin-top: var(--f-xs); }
 }
 
 // Medium display
@@ -82,11 +76,8 @@
     }
   }
   .project-header {
-    margin-right: var(--spacing-sm);
-  }
 
-  .project-content {
-    width: 100%;
+    max-width: 12rem;
   }
 }
 
@@ -108,11 +99,6 @@
 
   .project-card {
     flex-direction: column-reverse;
-
-    .project-keywords {
-      // background-color: red;
-    //  flex-direction: column;
-    }
   }
 }
 
@@ -136,7 +122,12 @@
     }
     .project-header {
       min-width: var(--spacing-xl);
+      margin-right: var(--spacing-xs);
       width: 100%;
+
+      .project-image {
+        width: 100%;
+      }
     }
     .project-content {
       span {

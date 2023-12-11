@@ -6,12 +6,13 @@
   --black: #010101;
   --navy: #0f172a;
   --light-navy: #112240;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
+  --slate: #838fb6;
+  --light-slate: #cbd8f7;
   --peel: #fcf39640;
   --yellow: #FFF263;
   
   /* Content Spacing */
+  --spacing-xs: 1.15rem;
   --spacing-sm: 2.375rem;
   --spacing-md: 4.75rem;
   --spacing-lg: 7.85rem;
@@ -20,7 +21,8 @@
   /* Font Sizing */
   --f-lg: 3rem;
   --f-md: 1.25rem;
-  --f-sm: 0.975rem;
+  --f-sm: 0.965rem;
+  --f-xs: 0.895rem;
 
   /* Icon Sizing */
   --f-icon: 1.875rem;

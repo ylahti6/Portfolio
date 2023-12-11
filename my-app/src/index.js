@@ -6,6 +6,7 @@ import App from './App';
 import Content from './Content';
 import About from './Sections/About';
 import Work from './Sections/Work';
+import Writing from './Sections/Writing';
 import Footer from './Sections/Footer';
 import reportWebVitals from './reportWebVitals';
 
@@ -17,6 +18,7 @@ root.render(
       <Content>
         <About />
         <Work />
+        <Writing />
         <Footer />
       </ Content >
     </div>

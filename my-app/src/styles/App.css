@@ -34,15 +34,11 @@
     margin: var(--spacing-md) 0;
   }
   .project-header {
-    margin-right: var(--spacing-sm);
     min-width: 10rem;
     max-width: 16rem;
   }
-  .project-header .project-image {
-    width: 100%;
-  }
-  .project-header .project-content {
-    background-color: blue;
+  .content-wrap:first-child {
+    margin-top: var(--f-xs);
   }
 }
 @media (max-width: 1023px) {
@@ -73,10 +69,7 @@
     height: 100%;
   }
   .project-header {
-    margin-right: var(--spacing-sm);
-  }
-  .project-content {
-    width: 100%;
+    max-width: 12rem;
   }
 }
 @media (max-width: 768px) {
@@ -121,6 +114,11 @@
 .App .project-card .project-header,
 .content-wrap .project-card .project-header {
   min-width: var(--spacing-xl);
+  margin-right: var(--spacing-xs);
+  width: 100%;
+}
+.App .project-card .project-header .project-image,
+.content-wrap .project-card .project-header .project-image {
   width: 100%;
 }
 .App .project-card .project-content span,
