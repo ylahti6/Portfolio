@@ -7,10 +7,17 @@
 .App-header {
   height: calc(100% - (var(--spacing-md) * 2));
   position: relative;
+  display: flex;
+  flex-direction: column;
+ 
   .App-social {
-    gap: 1rem;
+    margin-top: auto; /* Push the social icons to the bottom */
     display: flex;
-    width: fit-content ;
+    align-items: center;
+    span {
+      width: 100%;
+      a { margin-right: 1rem; }
+    }
   }
 }
 
@@ -18,15 +25,15 @@
 @media (min-width: 1024px) {
   .resume {
     margin-top: var(--spacing-sm);
+    text-align: right;
+
+    .arrowLink {
+      padding: 0 0 0 0.5rem;
+    }
   }
   .App-header {
     position: fixed;
     max-width: 40%;
-
-    .App-social {
-      position: absolute;
-      bottom: 0;
-    }
   }
   .App {
     min-width: 50%;

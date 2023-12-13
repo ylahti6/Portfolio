@@ -1,8 +1,13 @@
+import React from 'react';
 import '../index.css';
 import '../styles/App.css';
+import resumePDF from '../images/Resume.pdf';
+import useHover from '../Sections/Components/arrowHoverFunction';
+import {PiArrowSquareUpRightBold, PiArrowSquareUpRightFill} from "react-icons/pi";
+
 
 function About() {
-  const resumeUrl = 'https://github.com/himynameisyannick/PPv2/blob/f6dac43bed821f713453c9ad7dc141de931f4818/my-app/public/Resume.pdf';
+  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
 
   return (
     <div className='content-wrap'>
@@ -16,7 +21,18 @@ function About() {
       <p className='lg-font'>My journey fuses technological expertise, artistic inspiration, and a commitment to impactful digital experiences.</p>
 
       <div className="resume">
-        <h6><a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Full Resume</a></h6>
+      <h6>
+            <a
+              href={resumePDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              View Full Résumé
+              {isHovered ? <PiArrowSquareUpRightBold className='arrowLink'/> : <PiArrowSquareUpRightFill className='arrowLink'/>}
+            </a>
+          </h6>
       </div>
     </div>
   );

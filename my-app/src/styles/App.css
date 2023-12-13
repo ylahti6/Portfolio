@@ -6,25 +6,32 @@
 .App-header {
   height: calc(100% - var(--spacing-md) * 2);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .App-header .App-social {
-  gap: 1rem;
+  margin-top: auto; /* Push the social icons to the bottom */
   display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
+  align-items: center;
+}
+.App-header .App-social span {
+  width: 100%;
+}
+.App-header .App-social span a {
+  margin-right: 1rem;
 }
 
 @media (min-width: 1024px) {
   .resume {
     margin-top: var(--spacing-sm);
+    text-align: right;
+  }
+  .resume .arrowLink {
+    padding: 0 0 0 0.5rem;
   }
   .App-header {
     position: fixed;
     max-width: 40%;
-  }
-  .App-header .App-social {
-    position: absolute;
-    bottom: 0;
   }
   .App {
     min-width: 50%;
