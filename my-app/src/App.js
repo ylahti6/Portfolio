@@ -1,13 +1,13 @@
 import React from 'react';
 import './index.css';
 import './styles/App.css';
+
 import { PiGithubLogoLight, PiCodepenLogoLight, PiInstagramLogoLight } from "react-icons/pi";
 
 function App() {
   const githubUrl = 'https://github.com/himynameisyannick';
   const instagramUrl = 'https://www.instagram.com/yannicklahti/';
   const codepenUrl = 'https://codepen.io/Burgerwhip';
-
   
   return (
     <div className="App">

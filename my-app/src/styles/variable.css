@@ -1,5 +1,3 @@
-/* VARIABLE STYLING - CHANGING WILL OCCUR TO ALL COMPONENTS */
-
 :root {
   /* Color Palette */
   --white: #e6f1ff;
@@ -20,7 +18,7 @@
 
   /* Font Sizing */
   --f-lg: 3rem;
-  --f-md: 1rem;
+  --f-md: 1.15rem;
   --f-sm: 0.965rem;
   --f-xs: 0.895rem;
 

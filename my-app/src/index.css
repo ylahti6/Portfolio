@@ -3,7 +3,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0f172a;
+  /* background-color: #0f172a; */
+
+background: #0F182A;
+background: radial-gradient(at left top, #0F182A, #112240);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -25,7 +28,7 @@ a:hover {color: var(--yellow);}
 /* Font Styling */
 h1 {font-size: var(--f-lg); font-weight: 700;}
 h3 {font-size: var(--f-md); font-weight: 500;}
-h6 {font-size: var(--f-sm); font-weight: 600; margin-bottom: var(--spacing-sm);}
+h6 {font-size: var(--f-sm); font-weight: 500; margin-bottom: var(--spacing-sm);}
 p.lg-font {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 1.5rem;}
 p {font-size: var(--f-xs); color: var(--slate); margin: 0.75rem 0; line-height: 1.45rem;}
 
