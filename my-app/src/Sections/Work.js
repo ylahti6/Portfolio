@@ -7,33 +7,15 @@ import Fonts from '../images/course-card.png';
 function Work() {
   const projects = [
     {
-      title: "Libernotes",
+      title: "AAC App",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imageSrc: [Fonts],
       keywords: ["React.js", "Scss"],
     },
-    {
-      title: "IT GIRL Theme (Blog)",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imageSrc: [Fonts],
-      keywords: ["React.js","SCSS", "Blog",],
-    },
-    {
-      title: "Testing C# Game",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imageSrc: [Fonts],
-      keywords: ["React.js", "Sass"],
-    },
-    {
-      title: "FullBoost",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      keywords: ["React.js", "Sass"],
-      imageSrc: [Fonts],
-    }
   ]
 
   return (
-    <div className='content-wrap'>
+    <div className='content-wrap work'>
       <div className='title'>
         <h6>Work</h6>
         </div>

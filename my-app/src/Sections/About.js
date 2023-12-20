@@ -4,7 +4,7 @@ import '../styles/App.css';
 
 const About = () => {
   return (
-    <div className='content-wrap'>
+    <div className='content-wrap about'>
       <div className='title'>
         <h6>About</h6>
       </div>

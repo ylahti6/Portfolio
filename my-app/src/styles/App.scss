@@ -9,9 +9,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
   p {
-    max-width: 15rem;
+    max-width: 20rem;
   }
 
   .App-social {
@@ -187,13 +186,15 @@
     transition: all 0.3s ease;
   }
 }
-.cursor {
-  width: 40px;
-  height: 40px;
-  border: 3px solid white;
-  border-radius: 50%;
-  position: absolute;
-  box-shadow: 2px -3px 41px -1px rgba(250, 250, 250, 0.64);
-  transition: all 0.1s linear;
-  pointer-events: none;
+
+::-webkit-scrollbar {
+  width: var(--f-xs);
+  background-color: red;
+}
+::-webkit-scrollbar-track {
+  background: var(--fungrey);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--font);
+  border: 1px solid var(--fungrey);
 }

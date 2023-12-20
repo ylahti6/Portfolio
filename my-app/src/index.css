@@ -16,7 +16,8 @@ body {
 * { margin: 0; padding: 0; text-decoration: none;}
 
 /* Hyperlink Styling */
-a {color: var(--light-slate);}
+a {color: var(--font); font-weight: bold;}
+a:hover { text-decoration: underline;}
 
 /* Styling for links with words */
 a.hover::before {
@@ -38,7 +39,7 @@ a:hover::before {width: 100%;}
 .icon {color: var(--slate); font-size: var(--f-icon);}
 
 /* Font Styling */
-h1 {font-size: var(--f-lg); font-weight: 700;}
+h1 {font-size: var(--f-lg); font-weight: bolder;}
 h3 {font-size: var(--f-md); font-weight: 500;}
 h6 {font-size: var(--f-xs); font-weight: bolder; min-width: fit-content;}
 p {font-size: var(--f-xs); color: var(--slate); line-height: 1.65rem;}
