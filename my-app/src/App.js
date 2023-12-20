@@ -26,6 +26,7 @@ function App() {
           </span>
           <h6>
             <a
+              className='hover'
               href={resumePDF}
               target="_blank"
               rel="noopener noreferrer"
@@ -33,7 +34,6 @@ function App() {
               onMouseLeave={handleMouseLeave}
             >
               View Full Résumé
-              {isHovered ? <PiArrowSquareUpRightBold className='arrowLink'/> : <PiArrowSquareUpRightFill className='arrowLink'/>}
             </a>
           </h6>
         </div>

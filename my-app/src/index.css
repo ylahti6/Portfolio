@@ -8,8 +8,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins", sans-serif;
-  color: var(--white);
+  font-family: 'Roboto Mono', monospace;
+  color: var(--font);
   text-transform: uppercase;
 }
 
@@ -17,16 +17,31 @@ body {
 
 /* Hyperlink Styling */
 a {color: var(--light-slate);}
-a:hover {color: var(--yellow);}
+
+/* Styling for links with words */
+a.hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; /* Initial width is 0 */
+  height: 100%;
+  background-color: var(--font); /* Set your desired fill color */
+  transition: width 0.3s ease; /* Set the transition duration and timing function */
+  z-index: -1;
+}
+a.hover:hover {color: var(--fungrey);}
+a:hover::before {width: 100%;}
 
 /* Icon Styling */
-.icon:hover {color: var(--white)}
+.icon:hover {}
 .icon {color: var(--slate); font-size: var(--f-icon);}
 
 /* Font Styling */
 h1 {font-size: var(--f-lg); font-weight: 700;}
 h3 {font-size: var(--f-md); font-weight: 500;}
-h6 {font-size: var(--f-sm); font-weight: 500; margin-bottom: var(--spacing-sm);}
-p {font-size: var(--f-xs); color: var(--slate); margin: 0.75rem 0; line-height: 1.45rem;}
+h6 {font-size: var(--f-xs); font-weight: bolder; min-width: fit-content;}
+p {font-size: var(--f-xs); color: var(--slate); line-height: 1.65rem;}
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
