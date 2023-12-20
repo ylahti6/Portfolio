@@ -1,13 +1,8 @@
 :root {
   /* Color Palette */
-  --white: #e6f1ff;
-  --black: #010101;
-  --navy: #0f172a;
-  --light-navy: #112240;
-  --slate: #838fb6;
-  --light-slate: #cbd8f7;
-  --peel: #fcf39640;
-  --yellow: #FFF263;
+  --white: #3F3F3F;
+  --highlight: #C4FF58;
+  --fungrey: #DDDDDD;
   
   /* Content Spacing */
   --spacing-xs: 1.15rem;
@@ -20,7 +15,7 @@
   --f-lg: 3rem;
   --f-md: 1.15rem;
   --f-sm: 0.965rem;
-  --f-xs: 0.895rem;
+  --f-xs: 0.795rem;
 
   /* Icon Sizing */
   --f-icon: 1.875rem;

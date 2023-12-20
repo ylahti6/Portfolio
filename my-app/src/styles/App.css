@@ -29,16 +29,20 @@
   .resume .arrowLink {
     padding: 0 0 0 0.5rem;
   }
-  .App-header {
-    position: fixed;
-    max-width: 40%;
-  }
-  .App {
-    min-width: 50%;
-  }
   .wrap {
     padding: 0 5rem;
     margin: var(--spacing-md) 0;
+    justify-content: space-between;
+  }
+  .wrap .App-header {
+    position: fixed;
+    max-width: calc(50% - var(--spacing-lg));
+  }
+  .wrap .App-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    max-width: 50%;
+    margin-left: 50%;
   }
   .project-header {
     min-width: 10rem;
@@ -62,7 +66,7 @@
     margin-top: var(--spacing-sm);
   }
   .title {
-    background-color: rgba(15, 23, 42, 0.4392156863);
+    background-color: var(--fungrey);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     position: sticky;
@@ -145,7 +149,7 @@
   width: fit-content;
   padding: 0 var(--f-sm);
   border-radius: 1rem;
-  background-color: var(--peel);
+  background-color: var(--highlight);
 }
 .App .project-card .icon,
 .content-wrap .project-card .icon {
@@ -157,4 +161,15 @@
   cursor: pointer;
   -webkit-filter: brightness(70%);
   transition: all 0.3s ease;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 2px -3px 41px -1px rgba(250, 250, 250, 0.64);
+  transition: all 0.1s linear;
+  pointer-events: none;
 }/*# sourceMappingURL=App.css.map */

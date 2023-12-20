@@ -12,21 +12,6 @@ function Writing () {
           content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           imageSrc: [Fonts],
         },
-        {
-          title: "IT GIRL Theme (Blog)",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          imageSrc: [Fonts],
-        },
-        {
-          title: "Testing C# Game",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          imageSrc: [Fonts],
-        },
-        {
-          title: "FullBoost",
-          content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          imageSrc: [Fonts],
-        }
       ]
     return (
         <div className='content-wrap'>

@@ -3,16 +3,14 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #0f172a; */
-
-background: #0F182A;
-background: radial-gradient(at left top, #0F182A, #112240);
+  background-color: var(--fungrey);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: var(--white);
+  text-transform: uppercase;
 }
 
 * { margin: 0; padding: 0; text-decoration: none;}
@@ -29,7 +27,6 @@ a:hover {color: var(--yellow);}
 h1 {font-size: var(--f-lg); font-weight: 700;}
 h3 {font-size: var(--f-md); font-weight: 500;}
 h6 {font-size: var(--f-sm); font-weight: 500; margin-bottom: var(--spacing-sm);}
-p.lg-font {font-size: var(--f-sm); color: var(--slate); margin: 0.75rem 0; line-height: 1.5rem;}
 p {font-size: var(--f-xs); color: var(--slate); margin: 0.75rem 0; line-height: 1.45rem;}
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
