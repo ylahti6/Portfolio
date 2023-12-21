@@ -25,7 +25,6 @@ const tl = gsap.timeline({default: {duration: 0.75, ease: "power1.out"}})
   tl.fromTo('.App-social .three', {opacity: 0, x: -100}, {opacity: 1, x: 0, duration: 0.7})
   tl.fromTo('.App-social .four', {opacity: 0, x: -100}, {opacity: 1, x: 0, duration: 0.7})
 
-  
   return (
     <div className="App">
       <header className="App-header">
