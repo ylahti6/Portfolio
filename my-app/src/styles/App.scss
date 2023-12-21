@@ -17,9 +17,9 @@
     margin-top: auto; /* Push the social icons to the bottom */
     display: flex;
     align-items: center;
-   
+
     h6 {
-      position: relative;;
+      position: relative;
       border-radius: var(--br-sm);
       padding: 0.15rem 0.5rem;
       border: 1px solid var(--font);
@@ -129,7 +129,7 @@
   margin-bottom: var(--spacing-lg);
   .title {
     h6 {
-      margin-bottom: var(--spacing-xs)
+      margin-bottom: var(--spacing-xs);
     }
   }
   .project-card {

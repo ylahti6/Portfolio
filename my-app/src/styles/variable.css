@@ -1,9 +1,9 @@
 :root {
   /* Color Palette */
-  --font: #3F3F3F;
-  --highlight: #C4FF58;
-  --fungrey: #DDDDDD;
-  
+  --font: #3f3f3f;
+  --highlight: #c4ff58;
+  --fungrey: #dddddd;
+
   /* Content Spacing */
   --spacing-xs: 1.15rem;
   --spacing-sm: 2.375rem;
