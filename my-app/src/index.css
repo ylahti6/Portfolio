@@ -24,7 +24,8 @@ a {
   color: var(--font);
   font-weight: bold;
 }
-a:hover {
+
+.content-wrap a:hover {
   text-decoration: underline;
 }
 
@@ -47,9 +48,6 @@ a:hover::before {
   width: 100%;
 }
 
-/* Icon Styling */
-.icon:hover {
-}
 .icon {
   color: var(--slate);
   font-size: var(--f-icon);
@@ -65,7 +63,7 @@ h3 {
   font-weight: 500;
 }
 h6 {
-  font-size: var(--f-xs);
+  font-size: var(--f-sm);
   font-weight: bolder;
   min-width: fit-content;
 }
@@ -73,6 +71,7 @@ p {
   font-size: var(--f-xs);
   color: var(--slate);
   line-height: 1.65rem;
+  margin: 0.25rem 0;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");

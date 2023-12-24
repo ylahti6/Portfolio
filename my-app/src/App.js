@@ -55,20 +55,13 @@ function App() {
     { opacity: 0, x: -100 },
     { opacity: 1, x: 0, duration: 0.7 }
   );
-  tl.fromTo(
-    ".App-social .four",
-    { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 0.7 }
-  );
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Yannick Lahti</h1>
-        <h3>Junior Front-End developer</h3>
-        <p>
-          Creative developer focusing on 3D & Interaction. Based in london (uk)
-        </p>
+        <h3>Front-End developer</h3>
+        <p>Creative developer, Based in london (uk).</p>
 
         <div className="App-social">
           <span>
@@ -86,15 +79,8 @@ function App() {
               rel="noopener noreferrer">
               <PiCodepenLogoLight className="icon two" />
             </a>
-            <a
-              href={instagramUrl}
-              className="three"
-              target="_blank"
-              rel="noopener noreferrer">
-              <PiInstagramLogoLight className="icon three" />
-            </a>
           </span>
-          <h6 className="four">
+          <p className="three">
             <a
               className="hover"
               href={resumePDF}
@@ -102,7 +88,7 @@ function App() {
               rel="noopener noreferrer">
               View Full Résumé
             </a>
-          </h6>
+          </p>
         </div>
       </header>
     </div>

@@ -2,16 +2,23 @@ import React from "react";
 import "../index.css";
 import "../styles/App.css";
 import Card from "./Components/Card.js";
-import Fonts from "../images/course-card.png";
+import AAC from "../images/AAC-Reimagined.png";
 
 function Work() {
   const projects = [
     {
       title: "AAC App",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imageSrc: [Fonts],
-      keywords: ["React.js", "Scss"],
+        "Developed a user-friendly Augmentative and Alternative Communication (AAC) app using React Native, empowering individuals with communication challenges to express themselves effortlessly. ",
+      imageSrc: [AAC],
+      keywords: ["React Native"],
+    },
+    {
+      title: "Practice",
+      content:
+        "Developed a user-friendly Augmentative and Alternative Communication (AAC) app using React Native, empowering individuals with communication challenges to express themselves effortlessly. ",
+      imageSrc: [AAC],
+      // keywords: ["React.js", "Scss"],
     },
   ];
 

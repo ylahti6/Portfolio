@@ -18,11 +18,12 @@
     display: flex;
     align-items: center;
 
-    h6 {
+    p {
       position: relative;
       border-radius: var(--br-sm);
       padding: 0.15rem 0.5rem;
       border: 1px solid var(--font);
+      min-width: fit-content;
     }
     span {
       width: 100%;
@@ -54,11 +55,40 @@
 
   .project-header {
     min-width: 10rem;
-    max-width: 16rem;
+    max-width: 12rem;
+    width: 150rem;
+  }
+
+  .project-content {
+    min-width: 15rem;
   }
   // Adding space to the first component of the content section to match the height of the left info section
   .content-wrap:first-child {
     margin-top: var(--f-xs);
+  }
+
+  .project-card:hover {
+    background-color: var(--font);
+    backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
+    background-color: #3f3f3f; /* Adjust the background color and opacity */
+    h6,
+    p,
+    .icon {
+      color: var(--fungrey);
+    }
+    .project-keywords {
+      color: var(--font);
+    }
+
+    .project-image {
+      cursor: pointer;
+      -webkit-filter: brightness(80%);
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
   }
 }
 
@@ -88,7 +118,20 @@
     }
   }
   .project-header {
-    max-width: 12rem;
+    max-width: 15rem;
+    width: 100%;
+  }
+
+  .project-card {
+    background-color: var(--font);
+    h6,
+    p,
+    .icon {
+      color: var(--fungrey);
+    }
+    .project-keywords {
+      color: var(--font);
+    }
   }
 }
 
@@ -129,6 +172,8 @@
     height: auto;
     display: flex;
     margin-bottom: var(--spacing-sm);
+    padding: 1rem;
+    border-radius: var(--br-sm);
     .project-image {
       min-width: 100%;
       border-radius: var(--br-sm);
@@ -155,23 +200,13 @@
         .keyword {
           color: var(--yellow);
           width: fit-content;
-          padding: 0 var(--f-sm);
-          margin: var(--spacing-xs) 0;
+          padding: 0 var(--f-xs);
+          margin: calc(var(--spacing-xs) / 2) 0;
           border-radius: var(--br-sm);
           background-color: var(--highlight);
         }
       }
     }
-  }
-
-  .project-image:hover {
-    cursor: pointer;
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
   }
 }
 

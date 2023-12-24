@@ -17,11 +17,13 @@
   display: flex;
   align-items: center;
 }
-.App-header .App-social h6 {
+.App-header .App-social p {
   position: relative;
   border-radius: var(--br-sm);
   padding: 0.15rem 0.5rem;
   border: 1px solid var(--font);
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 .App-header .App-social span {
   width: 100%;
@@ -48,10 +50,33 @@
   }
   .project-header {
     min-width: 10rem;
-    max-width: 16rem;
+    max-width: 12rem;
+    width: 150rem;
+  }
+  .project-content {
+    min-width: 15rem;
   }
   .content-wrap:first-child {
     margin-top: var(--f-xs);
+  }
+  .project-card:hover {
+    background-color: var(--font);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
+    background-color: #3f3f3f; /* Adjust the background color and opacity */
+  }
+  .project-card:hover h6,
+  .project-card:hover p,
+  .project-card:hover .icon {
+    color: var(--fungrey);
+  }
+  .project-card:hover .project-keywords {
+    color: var(--font);
+  }
+  .project-card:hover .project-image {
+    cursor: pointer;
+    -webkit-filter: brightness(80%);
+    transition: all 0.3s ease;
   }
 }
 @media (max-width: 1023px) {
@@ -78,7 +103,19 @@
     height: 100%;
   }
   .project-header {
-    max-width: 12rem;
+    max-width: 15rem;
+    width: 100%;
+  }
+  .project-card {
+    background-color: var(--font);
+  }
+  .project-card h6,
+  .project-card p,
+  .project-card .icon {
+    color: var(--fungrey);
+  }
+  .project-card .project-keywords {
+    color: var(--font);
   }
 }
 @media (max-width: 768px) {
@@ -113,6 +150,8 @@
   height: auto;
   display: flex;
   margin-bottom: var(--spacing-sm);
+  padding: 1rem;
+  border-radius: var(--br-sm);
 }
 .App .project-card .project-image,
 .content-wrap .project-card .project-image {
@@ -148,16 +187,10 @@
   color: var(--yellow);
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0 var(--f-sm);
-  margin: var(--spacing-xs) 0;
+  padding: 0 var(--f-xs);
+  margin: calc(var(--spacing-xs) / 2) 0;
   border-radius: var(--br-sm);
   background-color: var(--highlight);
-}
-.App .project-image:hover,
-.content-wrap .project-image:hover {
-  cursor: pointer;
-  -webkit-filter: brightness(70%);
-  transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar {

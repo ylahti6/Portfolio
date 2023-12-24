@@ -3,7 +3,7 @@ import { PiGithubLogoLight } from "react-icons/pi";
 
 const Card = ({ title, content, keywords, imageSrc }) => {
   return (
-    <div className="project-card">
+    <div className="project-card hover">
       <div className="project-header">
         {imageSrc && (
           <img
