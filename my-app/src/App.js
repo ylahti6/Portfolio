@@ -1,17 +1,13 @@
 import React from "react";
 import "./index.css";
 import "./styles/App.css";
-import resumePDF from "./images/Resume.pdf";
-import {
-  PiGithubLogoLight,
-  PiCodepenLogoLight,
-  PiInstagramLogoLight,
-} from "react-icons/pi";
+
+import { BsLinkedin, BsTwitter, BsGithub, BsInstagram } from "react-icons/bs";
 import { gsap } from "gsap";
 
 function App() {
-  const githubUrl = "https://github.com/himynameisyannick";
-  const instagramUrl = "https://www.instagram.com/yannicklahti/";
+  const githubUrl = "https://github.com/ylahti6";
+  const instagramUrl = "https://www.instagram.com/ylahti6";
   const codepenUrl = "https://codepen.io/Burgerwhip";
 
   // gsap
@@ -55,6 +51,16 @@ function App() {
     { opacity: 0, x: -100 },
     { opacity: 1, x: 0, duration: 0.7 }
   );
+  tl.fromTo(
+    ".App-social .four",
+    { opacity: 0, x: -100 },
+    { opacity: 1, x: 0, duration: 0.7 }
+  );
+  tl.fromTo(
+    ".App-social .five",
+    { opacity: 0, x: -100 },
+    { opacity: 1, x: 0, duration: 0.7 }
+  );
 
   return (
     <div className="App">
@@ -70,25 +76,30 @@ function App() {
               className="one"
               target="_blank"
               rel="noopener noreferrer">
-              <PiGithubLogoLight className="icon one" />
+              <BsGithub className="icon one" />
             </a>
             <a
               href={codepenUrl}
               className="two"
               target="_blank"
               rel="noopener noreferrer">
-              <PiCodepenLogoLight className="icon two" />
+              <BsTwitter className="icon two" />
             </a>
-          </span>
-          <p className="three">
             <a
-              className="hover"
-              href={resumePDF}
+              href={codepenUrl}
+              className="three"
               target="_blank"
               rel="noopener noreferrer">
-              View Full Résumé
+              <BsLinkedin className="icon three" />
             </a>
-          </p>
+            <a
+              href={codepenUrl}
+              className="four"
+              target="_blank"
+              rel="noopener noreferrer">
+              <BsInstagram className="icon four" />
+            </a>
+          </span>
         </div>
       </header>
     </div>

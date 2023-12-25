@@ -30,17 +30,14 @@ function Footer() {
         </a>
         .&nbsp;All text is set in the&nbsp;
         <a
-          href="https://fonts.google.com/specimen/Poppins"
+          href="https://fonts.google.com/specimen/Ubuntu"
           target="_blank"
           rel="noreferrer">
-          Poppins
+          Ubuntu
         </a>
         &nbsp;typeface and font sizing and color palette can be found within
         my&nbsp;
-        <a
-          href="https://github.com/himynameisyannick"
-          target="_blank"
-          rel="noreferrer">
+        <a href="https://github.com/ylahti6" target="_blank" rel="noreferrer">
           GitHub
         </a>
         .

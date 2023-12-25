@@ -12,21 +12,11 @@
   p {
     max-width: 20rem;
   }
-
   .App-social {
     margin-top: auto; /* Push the social icons to the bottom */
     display: flex;
     align-items: center;
-
-    p {
-      position: relative;
-      border-radius: var(--br-sm);
-      padding: 0.15rem 0.5rem;
-      border: 1px solid var(--font);
-      min-width: fit-content;
-    }
     span {
-      width: 100%;
       a {
         margin-right: 1rem;
       }
@@ -53,6 +43,16 @@
     }
   }
 
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-card:hover {
+    transition: 0.2s ease-in-out;
+    backdrop-filter: blur(10px);
+    background-color: #1e293bd3;
+  }
+
   .project-header {
     min-width: 10rem;
     max-width: 12rem;
@@ -66,30 +66,6 @@
   .content-wrap:first-child {
     margin-top: var(--f-xs);
   }
-
-  .project-card:hover {
-    background-color: var(--font);
-    backdrop-filter: blur(8px); /* Adjust the blur radius as needed */
-    background-color: #3f3f3f; /* Adjust the background color and opacity */
-    h6,
-    p,
-    .icon {
-      color: var(--fungrey);
-    }
-    .project-keywords {
-      color: var(--font);
-    }
-
-    .project-image {
-      cursor: pointer;
-      -webkit-filter: brightness(80%);
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      -ms-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-    }
-  }
 }
 
 // Laptop display
@@ -101,36 +77,23 @@
   }
 
   .App-social {
-    margin-top: var(--spacing-sm);
-  }
-  .title {
-    background-color: var(--fungrey);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    height: var(--spacing-md);
-
-    h6 {
-      display: flex;
-      align-items: center;
-      height: 100%;
+    span {
+      margin-top: var(--f-xs);
     }
   }
-  .project-header {
-    max-width: 15rem;
-    width: 100%;
+  // Header for each component making it larger as the screen gets smaller
+  h3 {
+    font-size: var(--f-lg);
   }
 
   .project-card {
-    background-color: var(--font);
-    h6,
-    p,
-    .icon {
-      color: var(--fungrey);
-    }
-    .project-keywords {
-      color: var(--font);
+    transition: 0.2s ease-in-out;
+    backdrop-filter: blur(10px);
+    background-color: #1e293b70;
+    padding: 1rem;
+    .project-header {
+      max-width: 15rem;
+      width: 100%;
     }
   }
 }
@@ -164,7 +127,7 @@
 .content-wrap {
   margin-bottom: var(--spacing-lg);
   .title {
-    h6 {
+    h3 {
       margin-bottom: var(--spacing-xs);
     }
   }
@@ -172,12 +135,13 @@
     height: auto;
     display: flex;
     margin-bottom: var(--spacing-sm);
-    padding: 1rem;
     border-radius: var(--br-sm);
     .project-image {
       min-width: 100%;
       border-radius: var(--br-sm);
     }
+
+    // Title for each project
     h6 {
       padding: 0;
       margin: 0;
@@ -196,28 +160,16 @@
       }
       .project-keywords {
         display: flex;
-        gap: var(--f-sm);
+        gap: var(--spacing-xs);
         .keyword {
-          color: var(--yellow);
+          color: var(--code);
           width: fit-content;
           padding: 0 var(--f-xs);
           margin: calc(var(--spacing-xs) / 2) 0;
           border-radius: var(--br-sm);
-          background-color: var(--highlight);
+          background-color: var(--code-background);
         }
       }
     }
   }
-}
-
-::-webkit-scrollbar {
-  width: var(--f-xs);
-  background-color: red;
-}
-::-webkit-scrollbar-track {
-  background: var(--fungrey);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--font);
-  border: 1px solid var(--fungrey);
 }

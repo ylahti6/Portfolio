@@ -1,5 +1,5 @@
 import React from "react";
-import { PiGithubLogoLight } from "react-icons/pi";
+import { BsGithub } from "react-icons/bs";
 
 const Card = ({ title, content, keywords, imageSrc }) => {
   return (
@@ -17,7 +17,7 @@ const Card = ({ title, content, keywords, imageSrc }) => {
       <div className="project-content">
         <span>
           <h6>{title}</h6>
-          <PiGithubLogoLight className="icon" />
+          <BsGithub className="icon" />
         </span>
         <p>{content}</p>
 

@@ -2,20 +2,30 @@ import React from "react";
 import "../index.css";
 import "../styles/App.css";
 
+import resumePDF from "../images/Resume.pdf";
+import { MdKeyboardArrowRight } from "react-icons/md";
 const About = () => {
   return (
     <div className="content-wrap about">
       <div className="title">
-        <h6>About</h6>
+        <h3>About</h3>
       </div>
 
-      <p className="lg-font">
-        I'm a front-end developer who seamlessly blends technology and
-        aesthetics. Proficient in HTML, CSS, and JavaScript, I craft
-        user-friendly interfaces with meticulous attention to detail. Guided by
-        minimalistic elegance, each design element serves a purpose.
+      <p>
+        i specialize in front-end development, proficient in html, css, and
+        javascript, i create user-friendly interfaces with meticulous attention
+        to detail. guided by minimalistic elegance, every design element serves
+        a purpose.
       </p>
-      <div className="resume">{/* Your additional content here */}</div>
+
+      <a
+        className="button"
+        href={resumePDF}
+        target="_blank"
+        rel="noopener noreferrer">
+        View Full Résumé
+        <MdKeyboardArrowRight className="icon" />
+      </a>
     </div>
   );
 };

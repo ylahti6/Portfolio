@@ -14,7 +14,7 @@ function Writing() {
   return (
     <div className="content-wrap writing">
       <div className="title">
-        <h6>Writing</h6>
+        <h3>Writing</h3>
       </div>
       {projects.map((project, index) => (
         <Blog key={index} {...project} />

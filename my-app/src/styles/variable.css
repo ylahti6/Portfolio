@@ -1,8 +1,15 @@
 :root {
-  /* Color Palette */
-  --font: #3f3f3f;
-  --highlight: #c4ff58;
-  --fungrey: #dddddd;
+  /* Coloring for buttons */
+  --button: #334155;
+  --button-hover: #475569;
+
+  /* Used for keywords */
+  --code-background: #7dd4fc50;
+  --code: #7dd4fc;
+
+  /* Main Colors */
+  --primary: #fff;
+  --secondary: #8e9eb2;
 
   /* Content Spacing */
   --spacing-xs: 1.15rem;
@@ -12,14 +19,15 @@
   --spacing-xl: 9.75rem;
 
   /* Font Sizing */
-  --f-lg: 3rem;
+  --f-xl: 3rem;
+  --f-lg: 1.87rem;
   --f-md: 1.15rem;
-  --f-sm: 0.965rem;
+  --f-sm: 1rem;
   --f-xs: 0.795rem;
 
   /* Icon Sizing */
-  --f-icon: 1.875rem;
+  --f-icon: 1.575rem;
 
   /* Border Radius */
-  --br-sm: 0.25rem;
+  --br-sm: 0.45rem;
 }
