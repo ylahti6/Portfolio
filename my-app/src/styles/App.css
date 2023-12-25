@@ -23,7 +23,7 @@
 
 @media (min-width: 1024px) {
   .wrap {
-    padding: 0 5rem;
+    padding: 0 var(--spacing-md);
     margin: var(--spacing-md) 0;
     justify-content: space-between;
   }
@@ -53,12 +53,11 @@
     border: 1px solid var(--button-hover);
   }
   .project-header {
-    min-width: 10rem;
-    max-width: 12rem;
-    width: 150rem;
+    min-width: 0rem;
+    max-width: 10rem;
   }
   .project-content {
-    min-width: 15rem;
+    min-width: 10rem;
   }
   .content-wrap:first-child {
     margin-top: var(--f-xs);
