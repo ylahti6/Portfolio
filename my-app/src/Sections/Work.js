@@ -2,8 +2,8 @@ import React from "react";
 import "../index.css";
 import "../styles/App.css";
 import Card from "./Components/Card.js";
-import AAC from "../images/AAC-Reimagined.png";
-import LiberNotes from "../images/AAC-Reimagined.png";
+import AAC from "../images/AACapp.png";
+import LiberNotes from "../images/LiberNotes.png";
 
 function Work() {
   const projects = [
@@ -27,9 +27,9 @@ function Work() {
         </a>
       ),
       content:
-        "Developed a user-friendly Augmentative and Alternative Communication (AAC) app using React Native, empowering individuals with communication challenges to express themselves effortlessly. ",
-      imageSrc: [AAC],
-      keywords: ["HTML", "SCSS", "Javascript"],
+        "Developed a user-friendly note-taking app using React Native and MongoDB, ensuring a smooth experience for capturing and organizing thoughts, ideas, and important information. ",
+      imageSrc: [LiberNotes],
+      keywords: ["React", "SASS", "MongoDB"],
     },
     {
       title: "Practice",

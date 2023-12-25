@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import "./styles/App.css";
 
@@ -10,57 +10,69 @@ function App() {
   const instagramUrl = "https://www.instagram.com/ylahti6";
   const codepenUrl = "https://codepen.io/Burgerwhip";
 
-  // gsap
-  const tl = gsap.timeline({ default: { duration: 0.75, ease: "power1.out" } });
-  tl.fromTo("h1", { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 0.4 });
-  tl.fromTo("h3", { opacity: 0, x: -100 }, { opacity: 1, x: 0, duration: 0.4 });
-  tl.fromTo(
-    ".App-header p",
-    { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 0.4 }
-  );
-  tl.fromTo(
-    ".content-wrap.about",
-    { opacity: 0, x: 100 },
-    { opacity: 1, x: 0, duration: 0.5 },
-    "<"
-  );
-  tl.fromTo(
-    ".content-wrap.work",
-    { opacity: 0, x: 100 },
-    { opacity: 1, x: 0, duration: 0.5 }
-  );
-  tl.fromTo(
-    ".content-wrap.writing",
-    { opacity: 0, x: 100 },
-    { opacity: 1, x: 0, duration: 0.5 }
-  );
-  tl.fromTo(
-    ".App-social .one",
-    { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 0.7 },
-    "<"
-  );
-  tl.fromTo(
-    ".App-social .two",
-    { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 0.7 }
-  );
-  tl.fromTo(
-    ".App-social .three",
-    { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 0.7 }
-  );
-  tl.fromTo(
-    ".App-social .four",
-    { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 0.7 }
-  );
-  tl.fromTo(
-    ".App-social .five",
-    { opacity: 0, x: -100 },
-    { opacity: 1, x: 0, duration: 0.7 }
-  );
+  useEffect(() => {
+    // gsap
+    const tl = gsap.timeline({
+      default: { duration: 0.75, ease: "power1.out" },
+    });
+    tl.fromTo(
+      "h1",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 0.4 }
+    );
+    tl.fromTo(
+      "h3",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 0.4 }
+    );
+    tl.fromTo(
+      ".App-header p",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 0.4 }
+    );
+    tl.fromTo(
+      ".content-wrap.about",
+      { opacity: 0, x: 100 },
+      { opacity: 1, x: 0, duration: 0.5 },
+      "<"
+    );
+    tl.fromTo(
+      ".work",
+      { opacity: 0, x: 100 },
+      { opacity: 1, x: 0, duration: 0.5 }
+    );
+    tl.fromTo(
+      ".writing",
+      { opacity: 0, x: 100 },
+      { opacity: 1, x: 0, duration: 0.5 }
+    );
+    tl.fromTo(
+      ".App-social .one",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 0.7 },
+      "<"
+    );
+    tl.fromTo(
+      ".App-social .two",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 0.7 }
+    );
+    tl.fromTo(
+      ".App-social .three",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 0.7 }
+    );
+    tl.fromTo(
+      ".App-social .four",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 0.7 }
+    );
+    tl.fromTo(
+      ".App-social .five",
+      { opacity: 0, x: -100 },
+      { opacity: 1, x: 0, duration: 0.7 }
+    );
+  }, []); // Empty dependency array ensures the effect runs only once on mount
 
   return (
     <div className="App">

@@ -1,14 +1,13 @@
 import "../index.css";
 import "../styles/App.css";
 import Blog from "./Components/Blog.js";
-import Fonts from "../images/course-card.png";
 
 function Writing() {
   const projects = [
     {
       title: "Libernotes",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageSrc: [Fonts],
+      // imageSrc: [Fonts],
     },
   ];
   return (

@@ -40,11 +40,17 @@
   .project-card {
     padding: 1rem;
   }
+  .project-card .project-image {
+    border: 1px solid var(--button);
+  }
   .project-card:hover {
     transition: 0.2s ease-in-out;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     background-color: rgba(30, 41, 59, 0.8274509804);
+  }
+  .project-card:hover .project-image {
+    border: 1px solid var(--button-hover);
   }
   .project-header {
     min-width: 10rem;

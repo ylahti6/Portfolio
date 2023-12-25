@@ -45,12 +45,20 @@
 
   .project-card {
     padding: 1rem;
+
+    .project-image {
+      border: 1px solid var(--button);
+    }
   }
 
   .project-card:hover {
     transition: 0.2s ease-in-out;
     backdrop-filter: blur(10px);
     background-color: #1e293bd3;
+
+    .project-image {
+      border: 1px solid var(--button-hover);
+    }
   }
 
   .project-header {
