@@ -13,7 +13,7 @@
     max-width: 20rem;
   }
   .App-social {
-    margin-top: auto; /* Push the social icons to the bottom */
+    margin-top: auto;
     display: flex;
     align-items: center;
     span {
@@ -178,5 +178,33 @@
         }
       }
     }
+  }
+}
+
+.button {
+  background-color: var(--button);
+  color: var(--primary);
+  padding: 0.75rem 0.5rem 0.75rem 1rem;
+  min-width: fit-content;
+  border-radius: 10rem;
+  margin-top: var(--spacing-xs);
+  max-width: fit-content;
+  font-size: var(--f-xs);
+  float: right;
+  display: flex;
+  align-items: center;
+
+  .button-icon {
+    font-size: var(--f-sm);
+    color: var(--secondary);
+    font-weight: 600;
+  }
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+
+  .button-icon {
+    color: var(--primary);
   }
 }

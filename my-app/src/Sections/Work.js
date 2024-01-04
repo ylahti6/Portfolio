@@ -12,9 +12,10 @@ function Work() {
     {
       title: (
         <a href="#" target="_blank" rel="noopener noreferrer">
-          AAC App
+          AAC Project / LiberSpeech
         </a>
       ),
+
 
       content:
         "Developed a user-friendly Augmentative and Alternative Communication (AAC) app using React Native, empowering individuals with communication challenges to express themselves effortlessly. ",

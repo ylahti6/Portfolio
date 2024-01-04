@@ -3,7 +3,7 @@ import "../index.css";
 import "../styles/App.css";
 
 import resumePDF from "../images/Resume.pdf";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { FaAngleRight } from "react-icons/fa";
 const About = () => {
   return (
     <div className="content-wrap about">
@@ -24,7 +24,7 @@ const About = () => {
         target="_blank"
         rel="noopener noreferrer">
         View Full Résumé
-        <MdKeyboardArrowRight className="icon" />
+        <FaAngleRight className="button-icon" />
       </a>
     </div>
   );

@@ -79,7 +79,7 @@ function App() {
       <header className="App-header">
         <h1>Yannick Lahti</h1>
         <h3>Front-End developer</h3>
-        <p>Creative developer, Based in london (uk).</p>
+        <p>Who loves building experiences, fixing issues both online and off, based in london (uk).</p>
 
         <div className="App-social">
           <span>
