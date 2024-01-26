@@ -12,10 +12,9 @@ function Work() {
     {
       title: (
         <a href="#" target="_blank" rel="noopener noreferrer">
-          AAC Project / LiberSpeech
+          Oratio
         </a>
       ),
-
 
       content:
         "Developed a user-friendly Augmentative and Alternative Communication (AAC) app using React Native, empowering individuals with communication challenges to express themselves effortlessly. ",
@@ -35,7 +34,7 @@ function Work() {
       keywords: ["React", "MongoDB"],
     },
     {
-      title: "Practice",
+      title: "Fun & Practice",
       content:
         "I use Codementor to improve my web development skills and stay updated on industry trends. It's my go-to platform for learning and seeking guidance from experienced mentors, showcasing my commitment to continuous improvement in this dynamic field.",
       imageSrc: [CodeMentor],
