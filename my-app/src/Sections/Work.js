@@ -25,7 +25,7 @@ function Work() {
     {
       title: (
         <a href="#" target="_blank" rel="noopener noreferrer">
-          Liber notes
+          Online Store
         </a>
       ),
       content:
