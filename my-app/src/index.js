@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./styles/global.css";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
+import Work from "./Sections/Work";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,7 +13,7 @@ root.render(
         <App />
       </div>
       <div className="container-two">
-
+        <Work />
       </div>
     </div>
   </React.StrictMode>

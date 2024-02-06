@@ -54,7 +54,7 @@
   .project-card:hover {
     transition: 0.2s ease-in-out;
     backdrop-filter: blur(10px);
-    background-color: #1e293bd3;
+    // background-color: #1e293bd3;
 
     .project-image {
       border: 1px solid var(--button-hover);
@@ -96,7 +96,7 @@
   .project-card {
     transition: 0.2s ease-in-out;
     backdrop-filter: blur(10px);
-    background-color: #1e293b70;
+    // background-color: #1e293b70;
     padding: 1rem;
     .project-header {
       max-width: 15rem;
