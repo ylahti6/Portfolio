@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/global.css";
 import reportWebVitals from "./reportWebVitals";
+import Main from "./Sections/Main";
 import App from "./App";
 import Work from "./Sections/Work";
 
@@ -9,6 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="wrap">
+      <div className="container-floating">
+        <Main />
+      </div>
       <div className="container-one">
         <App />
       </div>

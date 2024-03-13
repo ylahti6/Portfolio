@@ -12,18 +12,6 @@ function Work() {
       industry: "industry",
       date: "101010",
     },
-    // {
-    //   title: (
-    //     <a href="#" target="_blank" rel="noopener noreferrer">
-    //       Oratio
-    //     </a>
-    //   ),
-    //   content:
-    //     "Developed a user-friendly Augmentative and Alternative Communication (AAC) app using React Native, empowering individuals with communication challenges to express themselves effortlessly. ",
-    //   // imageSrc: [AAC],
-    //   keywords: ["React Native"],
-    // },
-    // Note taking app
     {
       testone: "hello one",
       testtwo: "hello two",
